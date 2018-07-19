@@ -1,7 +1,20 @@
-<p style="color:white">Concept Sketches</p>
-  <br>
+
+
+<div class="gallery cf">
+
+  <p class="para">Concept Sketches</p>
+    <br>
+
   <div class="concept">
     <%= image_tag "peeps" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "dreads" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "worker" %>
   </div>
 
   <div class="concept">
@@ -9,19 +22,99 @@
   </div>
 
   <div class="concept">
+    <%= image_tag "AgainstTheWall2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "AgainstTheWall3" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "TimConcept" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "TimConcept2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Blossoms5" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Regal2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Head in the Clouds5" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "PosePractice" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "PosePractice2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "PosePractice3" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Scan 1 copy" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Dude4" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "realisticlady" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "realisticlady2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Deandra2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "hat eyes" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Scan copy 3" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Prince" %>
+  </div>
+
+  <div class="concept">
     <%= image_tag "Waiting2" %>
   </div>
 
   <div class="concept">
+    <%= image_tag "Waiting3" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Rebel2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Scan 1" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Scan" %>
+  </div>
+
+  <div class="concept">
     <%= image_tag "dresses" %>
-  </div>
-
-  <div class="concept">
-    <%= image_tag "right" %>
-  </div>
-
-  <div class="concept">
-    <%= image_tag "charcoal" %>
   </div>
 
   <div class="concept">
@@ -32,13 +125,61 @@
     <%= image_tag "pinkandblue" %>
   </div>
 
+  <div class="concept">
+    <%= image_tag "fur" %>
+  </div>
+
+</div>
+
+
+
+
+<div class="gallery cf">
+
+
 <br><br>
 
-<p style="color:white">Digital</p>
+  <p class="para">Finished</p>
+
+  <div class="finished">
+    <%= image_tag "charcoal" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "right" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Scan copy" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "Scan copy 2" %>
+  </div>
+
+  <div class="concept">
+    <%= image_tag "pinklady" %>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="gallery cf">
+
+
+<br><br>
+
+<p class="para">Digital</p>
 
   <div class="zoom">
     <%= image_tag "AgainstTheWall" %>
-</div>
+  </div>
 
   <div class="zoom">
     <%= image_tag "Behind" %>
@@ -68,9 +209,66 @@
     <%= image_tag "Head in the Clouds" %>
   </div>
 
+</div>
 
-  <p style="color:white">3D</p>
+
+
+
+<div class="gallery cf">
+
+
+
+  <p class="para">3D</p>
+
     <div class="zoom">
       <%= image_tag "FinalRen" %>
     </div>
+
+    <div class="zoom">
+      <%= image_tag "Donuts" %>
+    </div>
+
+    <div class="zoom">
+      <%= image_tag "Subway Dos" %>
+    </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- hover effect that makes images grow when clicked below -->
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = true;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+
+</script>
