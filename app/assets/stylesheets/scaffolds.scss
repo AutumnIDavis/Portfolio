@@ -28,10 +28,20 @@ a {
 
   }
 
+  &:hover img{
+    text-shadow: -5px 4px 5px black;
+    font-size: 15px;
+    background-color: #ffc0cb52;
+    padding: 5px;
+    box-shadow: -8px 6px 19px black;
+  }
+
   &:hover {
     text-shadow: -5px 4px 5px black;
-    font-size: 25px;
-    // background-color: #000;
+    font-size: 15px;
+    background-color: #ffc0cb52;
+    padding: 10px;
+    box-shadow: -8px 6px 19px black;
   }
 }
 
@@ -107,10 +117,6 @@ ul{
   top: 5%;
   left: 54%;
   z-index: 1;
-}
-
-ul :hover{
-  color: pink;
 }
 
 li {

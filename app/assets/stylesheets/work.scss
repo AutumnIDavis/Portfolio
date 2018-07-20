@@ -58,8 +58,9 @@ body {
 }
 
 .gallery {
-  width: 1262px;
-  margin: -32px auto 70px auto;
+  width: 1305px;
+  margin-right: auto;
+  margin-left: auto;
   height: 1030px;
   padding:  3% 4% 20% 4%;
   background: #ffffff1f;
@@ -70,7 +71,8 @@ body {
 .gallery > div {
   position: relative;
   // float: left;
-  padding: 10px 25px;
+  padding: 8px 24px;
+  left: 23px;
 }
 
 .gallery > div > img {
