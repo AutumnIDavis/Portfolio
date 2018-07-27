@@ -88,12 +88,26 @@
 // // // 	color: #fff;
 // // // }
 // // //
+
+.helloWorld{
+	background-color: #ffffff9e;
+	position: relative;
+	top: -111px;
+	left: 1%;
+	width: 701px;
+	font-size: 15px;
+	padding: 35px 40px 35px 30px;
+	margin: 25px;
+	display: inline-block;
+}
+
 .slider {
-	max-width: 1809px;
+	width: 1681px;
 	height: 752px;
 	margin: 20px auto;
 	position: relative;
-	top: -90px;
+	top: -92px;
+	left: -33px;
 }
 .slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8{
 	position: absolute;
@@ -120,14 +134,14 @@
 //     animation:fade3 20s infinite;
 // -webkit-animation:fade3 20s infinite;
 // }
-// .slide4 {
-//     background: url("bats")no-repeat center;
-//       background-size: cover;
-//     animation:fade4 50s infinite;
-// -webkit-animation:fade4 50s infinite;
-// }
+.slide4 {
+    background: url("LaptopDesign.png")no-repeat center;
+      background-size: cover;
+    animation:fade4 20s infinite;
+-webkit-animation:fade4 20s infinite;
+}
 .slide5 {
-    background: url("Behind2.png")no-repeat center;
+    background: url("PinkTrees.png")no-repeat center;
       background-size: cover;
     animation:fade5 20s infinite;
 -webkit-animation:fade5 20s infinite;
@@ -152,15 +166,15 @@
 {
   0%   {opacity:0}
   33.333% { opacity: 0}
-  66.666% { opacity: 1}
+  96.666% { opacity: 1}
   100% { opacity: 0}
 }
 
 @keyframes fade4
 {
   0%   {opacity:0}
-  33.333% { opacity: 0}
-  66.666% { opacity: 1}
+  63.333% { opacity: 0}
+  96.666% { opacity: 1}
   100% { opacity: 0}
 }
 
