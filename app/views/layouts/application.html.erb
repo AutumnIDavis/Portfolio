@@ -17,11 +17,13 @@
 
     <body>
 
-      <header>
+      <header style="position: fixed; width:  100%;">
+
         <br><br><br>
         <div class="container demo">
           <div class="content">
             <div id="large-header" class="large-header">
+
                 <canvas id="demo-canvas"></canvas>
 
                 <div class="headImg">
@@ -30,21 +32,33 @@
 
               <h1 class="main-title"><span class="thin">Forever <div class="heart">♡</div></span> Autumn </h1>
 
-
             </div>
         </div>
       </div>
 
+
         <div class="headerLinks">
           <ul>
               <li><a href="/" style= "color:white" > Home </a></li>
-              <li><a href="/work" style= "color:white;"> Work </a></li>
+              <!-- <li><a href="/work" style= "color:white;"> Work </a></li> -->
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">Work</button>
+                  <div class="dropdown-content">
+                    <a href="/work">Sketches</a>
+                    <a href="/charcoal">Charcoal</a>
+                    <a href="#">Digital</a>
+                  </div>
+                </div>
+              </li>
               <!-- <li><a href="/blog" style= "color:white;"> Blog </a></li> -->
               <li><a href="/resume" style= "color:white;"> Resume </a></li>
               <li><a href="/contact" style= "color:white;"> Contact </a></li>
           </ul>
         </div>
       </header>
+
+
 
             <%= yield %>
 

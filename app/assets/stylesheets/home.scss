@@ -101,7 +101,10 @@
 	padding: 35px 40px 35px 30px;
 	margin: 25px;
 	display: inline-block;
+	z-index: -1;
 }
+
+
 
 .slider {
 	width: 1229px;
@@ -110,6 +113,7 @@
   position: relative;
   top: -92px;
   left: -230px;
+  z-index: -1;
 }
 .slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8{
 	position: absolute;
