@@ -1,203 +1,268 @@
-// // // // // Place all the styles related to the Home controller here.
-// // // // // They will automatically be included in application.css.
-// // // // // You can use Sass (SCSS) here: http://sass-lang.com/
-// // //
-// // //
-// // // @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
-// // //
-// // // :root {
-// // // 	/* Base font size */
-// // // 	font-size: 10px;
-// // //
-// // // 	/* Full grid area variable */
-// // // 	--fullGrid: 1 / 1 / -1 / -1;
-// // // }
-// // //
-// // // .video-bg {
-// // // 	/* Span the full grid */
-// // // 	grid-area: var(--fullGrid);
-// // //
-// // // 	/* Re-size video to cover full screen while maintaining aspect ratio */
-// // // 	min-width: 105%;
-// // // 	min-height: 100%;
-// // // 	object-fit: cover;
-// // //
-// // // 	/* Display video below overlay */
-// // // 	z-index: -1;
-// // //
-// // //     position: relative;
-// // //     top: -75px;
-// // //     left: -38px;
-// // // }
-// // //
-// // // .video-bg::-webkit-media-controls {
-// // // 	display: none !important;
-// // // }
-// // //
-// // // .video-overlay {
-// // // 	/* Span the full grid */
-// // // 	grid-area: var(--fullGrid);
-// // //
-// // // 	/* Center Content */
-// // // 	display: grid;
-// // // 	justify-content: center;
-// // // 	align-content: center;
-// // // 	text-align: center;
-// // //
-// // // 	/* Semi-transparent background */
-// // // 	background-color: rgba(0, 0, 0, 0.55);
-// // // }
-// // //
-// // // h1 {
-// // // 	font-size: calc(1.8em + 2.5vw);
-// // // 	font-weight: 700;
-// // // 	line-height: 1.5;
-// // // 	letter-spacing: 0.02em;
-// // // 	color: #fff;
-// // // 	text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
-// // // }
-// // //
-// // // main {
-// // // 	padding: 5em 2em;
-// // // 	max-width: 94em;
-// // // 	margin: 0 auto;
-// // // }
-// // //
-// // // h2 {
-// // // 	font-size: calc(3em + 0.2vw);
-// // // 	font-weight: 600;
-// // // 	text-align: center;
-// // // 	margin: 1.2em 0;
-// // // 	color: #111;
-// // // }
-// // //
-// // // p {
-// // // 	font-size: calc(2em + 0.2vw);
-// // // 	font-weight: 400;
-// // // 	line-height: 2;
-// // // 	color: #222;
-// // // }
-// // //
-// // // ::-moz-selection {
-// // // 	background-color: rgba(0, 0, 0, 0.75);
-// // // 	color: #fff;
-// // // }
-// // //
-// // // ::selection {
-// // // 	background-color: rgba(0, 0, 0, 0.75);
-// // // 	color: #fff;
-// // // }
-// // //
-
-
-
-.helloWorld{
-	background-color: #ffffff9e;
-	position: relative;
-	top: -889px;
-	left: 72%;
-	width: 400px;
-	height: 682px;
-  line-height: 25px;
-	font-size: 15px;
-	padding: 35px 40px 35px 30px;
-	margin: 25px;
-	display: inline-block;
-	z-index: -1;
-}
-
-
-
-.slider {
-	width: 1229px;
-  height: 752px;
-  margin: 20px auto;
-  position: relative;
-  top: -92px;
-  left: -230px;
-  z-index: -1;
-}
-.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8{
-	position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.slide1 {
-  background: url("blossoms2.jpg")no-repeat center;
-      background-size: cover;
-    animation:fade 20s infinite;
--webkit-animation:fade 20s infinite;
-
-}
-.slide2 {
-  background: url("pinklady2.png")no-repeat center;
-      background-size: cover;
-    animation:fade2 20s infinite;
--webkit-animation:fade2 20s infinite;
-}
-// .slide3 {
-//     background: url("charcoal.jpeg")no-repeat center;
-//       background-size: cover;
-//     animation:fade3 20s infinite;
-// -webkit-animation:fade3 20s infinite;
+// // // // // // Place all the styles related to the Home controller here.
+// // // // // // They will automatically be included in application.css.
+// // // // // // You can use Sass (SCSS) here: http://sass-lang.com/
+// // // //
+// // // //
+// // // // @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
+// // // //
+// // // // :root {
+// // // // 	/* Base font size */
+// // // // 	font-size: 10px;
+// // // //
+// // // // 	/* Full grid area variable */
+// // // // 	--fullGrid: 1 / 1 / -1 / -1;
+// // // // }
+// // // //
+// // // // .video-bg {
+// // // // 	/* Span the full grid */
+// // // // 	grid-area: var(--fullGrid);
+// // // //
+// // // // 	/* Re-size video to cover full screen while maintaining aspect ratio */
+// // // // 	min-width: 105%;
+// // // // 	min-height: 100%;
+// // // // 	object-fit: cover;
+// // // //
+// // // // 	/* Display video below overlay */
+// // // // 	z-index: -1;
+// // // //
+// // // //     position: relative;
+// // // //     top: -75px;
+// // // //     left: -38px;
+// // // // }
+// // // //
+// // // // .video-bg::-webkit-media-controls {
+// // // // 	display: none !important;
+// // // // }
+// // // //
+// // // // .video-overlay {
+// // // // 	/* Span the full grid */
+// // // // 	grid-area: var(--fullGrid);
+// // // //
+// // // // 	/* Center Content */
+// // // // 	display: grid;
+// // // // 	justify-content: center;
+// // // // 	align-content: center;
+// // // // 	text-align: center;
+// // // //
+// // // // 	/* Semi-transparent background */
+// // // // 	background-color: rgba(0, 0, 0, 0.55);
+// // // // }
+// // // //
+// // // // h1 {
+// // // // 	font-size: calc(1.8em + 2.5vw);
+// // // // 	font-weight: 700;
+// // // // 	line-height: 1.5;
+// // // // 	letter-spacing: 0.02em;
+// // // // 	color: #fff;
+// // // // 	text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
+// // // // }
+// // // //
+// // // // main {
+// // // // 	padding: 5em 2em;
+// // // // 	max-width: 94em;
+// // // // 	margin: 0 auto;
+// // // // }
+// // // //
+// // // // h2 {
+// // // // 	font-size: calc(3em + 0.2vw);
+// // // // 	font-weight: 600;
+// // // // 	text-align: center;
+// // // // 	margin: 1.2em 0;
+// // // // 	color: #111;
+// // // // }
+// // // //
+// // // // p {
+// // // // 	font-size: calc(2em + 0.2vw);
+// // // // 	font-weight: 400;
+// // // // 	line-height: 2;
+// // // // 	color: #222;
+// // // // }
+// // // //
+// // // // ::-moz-selection {
+// // // // 	background-color: rgba(0, 0, 0, 0.75);
+// // // // 	color: #fff;
+// // // // }
+// // // //
+// // // // ::selection {
+// // // // 	background-color: rgba(0, 0, 0, 0.75);
+// // // // 	color: #fff;
+// // // // }
+// // // //
+//
+//
+//
+// .helloWorld{
+// 	background-color: #ffffff9e;
+// 	position: relative;
+// 	top: -889px;
+// 	left: 72%;
+// 	width: 400px;
+// 	height: 682px;
+//   line-height: 25px;
+// 	font-size: 15px;
+// 	padding: 35px 40px 35px 30px;
+// 	margin: 25px;
+// 	display: inline-block;
+// 	z-index: -1;
 // }
-.slide4 {
-    background: url("Hello2")no-repeat center;
-      background-size: cover;
-    animation:fade4 20s infinite;
--webkit-animation:fade4 20s infinite;
-}
-.slide5 {
-    background: url("PinkTrees.png")no-repeat center;
-      background-size: cover;
-    animation:fade5 20s infinite;
--webkit-animation:fade5 20s infinite;
-}
-@keyframes fade
-{
-  0%   {opacity:1}
-  33.333% { opacity: 0}
-  46.666% { opacity: 0}
-  100% { opacity: 1}
-}
-
-@keyframes fade2
-{
-  0%   {opacity:0}
-  33.333% { opacity: 1}
-  46.666% { opacity: 0 }
-  100% { opacity: 0}
-}
-
-// @keyframes fade3
+//
+//
+//
+// .slider {
+// 	width: 1229px;
+//   height: 752px;
+//   margin: 20px auto;
+//   position: relative;
+//   top: -92px;
+//   left: -230px;
+//   z-index: -1;
+// }
+// .slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8{
+// 	position: absolute;
+//   width: 100%;
+//   height: 100%;
+// }
+//
+// .slide1 {
+//   background: url("blossoms2.jpg")no-repeat center;
+//       background-size: cover;
+//     animation:fade 20s infinite;
+// -webkit-animation:fade 20s infinite;
+//
+// }
+// .slide2 {
+//   background: url("pinklady2.png")no-repeat center;
+//       background-size: cover;
+//     animation:fade2 20s infinite;
+// -webkit-animation:fade2 20s infinite;
+// }
+// // .slide3 {
+// //     background: url("charcoal.jpeg")no-repeat center;
+// //       background-size: cover;
+// //     animation:fade3 20s infinite;
+// // -webkit-animation:fade3 20s infinite;
+// // }
+// .slide4 {
+//     background: url("Hello2")no-repeat center;
+//       background-size: cover;
+//     animation:fade4 20s infinite;
+// -webkit-animation:fade4 20s infinite;
+// }
+// .slide5 {
+//     background: url("PinkTrees.png")no-repeat center;
+//       background-size: cover;
+//     animation:fade5 20s infinite;
+// -webkit-animation:fade5 20s infinite;
+// }
+// @keyframes fade
+// {
+//   0%   {opacity:1}
+//   33.333% { opacity: 0}
+//   46.666% { opacity: 0}
+//   100% { opacity: 1}
+// }
+//
+// @keyframes fade2
+// {
+//   0%   {opacity:0}
+//   33.333% { opacity: 1}
+//   46.666% { opacity: 0 }
+//   100% { opacity: 0}
+// }
+//
+// // @keyframes fade3
+// // {
+// //   0%   {opacity:0}
+// //   33.333% { opacity: 0}
+// //   46.666% { opacity: 1}
+// //   100% { opacity: 0}
+// // }
+//
+// @keyframes fade4
+// {
+//   0%   {opacity:0}
+//   63.333% { opacity: 0}
+//   46.666% { opacity: 1}
+//   100% { opacity: 0}
+// }
+//
+// @keyframes fade5
 // {
 //   0%   {opacity:0}
 //   33.333% { opacity: 0}
 //   46.666% { opacity: 1}
 //   100% { opacity: 0}
 // }
+//
+// // @keyframes fade6
+// // {
+// //   0%   {opacity:0}
+// //   33.333% { opacity: 0}
+// //   66.666% { opacity: 1}
+// //   100% { opacity: 0}
+// // }
 
-@keyframes fade4
-{
-  0%   {opacity:0}
-  63.333% { opacity: 0}
-  46.666% { opacity: 1}
-  100% { opacity: 0}
+slider {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	overflow: hidden;
+	position: absolute;
+	top: 150px;
+	left: 0px;
 }
 
-@keyframes fade5
-{
-  0%   {opacity:0}
-  33.333% { opacity: 0}
-  46.666% { opacity: 1}
-  100% { opacity: 0}
+slider > * {
+	position: absolute;
+	display: block;
+	width: 60%;
+	height: 80%;
+	background-color: black;
+	animation: slide 30s infinite;
+	overflow: hidden;
 }
 
-// @keyframes fade6
-// {
-//   0%   {opacity:0}
-//   33.333% { opacity: 0}
-//   66.666% { opacity: 1}
-//   100% { opacity: 0}
-// }
+slide:nth-child(1) {
+	left: 0%;
+	animation-delay: 1s;
+	background-image: url(Hello.png);
+	background-size: cover;
+	background-position: center;
+}
+slide:nth-child(2) {
+	left: 0%;
+	animation-delay: -5s;
+	background-image: url(PinkTrees.png);
+	background-size: cover;
+	background-position: center;
+}
+slide:nth-child(3) {
+	animation-delay: -10s;
+	background-image: url(boss.jpg);
+	background-size: cover;
+	background-position: center;
+}
+slide:nth-child(4) {
+	left: 0%;
+	animation-delay: -15s;
+	background-image: url(pinklady.png);
+	background-size: cover;
+	background-position: center;
+}
+slide:nth-child(5) {
+	left: 0%;
+	animation-delay: 0s;
+	background-image: url(Hello.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+@keyframes slide {
+	0% { left: 100%; width: 100%; }
+	5% { left: 0%; }
+	25% { left: 0%; }
+	30% { left: -100%; width: 0%; }
+	100% { left: 100%; width: 0%; }
+}
