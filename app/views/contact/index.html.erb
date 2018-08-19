@@ -56,10 +56,14 @@
       <div class="half left cf">
         <input type="text" name="name" placeholder="Name">
         <input type="email" name="_replyto" placeholder="Your Email">
-        <input type="radio" name="subject" placeholder="Subject" value="Commission"> Commission
-        <input type="radio" name="subject" placeholder="Subject" value="Question">Question
+        <h3>Subject:</h3>
+        <input type="radio" name="subject" value="Commission">Commission
+        <input type="radio" name="subject" value="Question">Question
+        <input type="radio" name="subject" value="Question">Purchase
         <input type="text" name="subject" placeholder="Other">
-        <input type="textarea" name="message" placeholder="Message" style="height: 200px;">
+        <div class="textArea">
+          <input type="textarea" name="message" placeholder="Message" style="height: 100px;">
+        </div>
         <div class="half right cf">
           <input type="submit" value="Send">
       </div>

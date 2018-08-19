@@ -67,3 +67,19 @@ p{
 .list{
   color: grey;
 }
+
+.ResumeDrawing{
+  display: inline-block;
+}
+
+.ResumeDrawing img{
+  display: inline-block;
+  width: 75%;
+  position: absolute;
+  left: 36%;
+  top: 20%;
+}
+
+.content{
+  // display: inline-flex;
+}
